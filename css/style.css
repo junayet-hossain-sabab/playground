@@ -7,8 +7,16 @@
 
 /* ALL COMMON END */
 
+.chess {
+  height: 2000px;
+  width: 1120px;
+  background-color: #5484ff;
+  margin: 0 auto;
+  text-align: center;
+}
 
-
-.chess{
-    
+.chess h1 {
+  display: inline-block;
+  border: 2px solid #000;
+  margin: 40px 0;
 }
