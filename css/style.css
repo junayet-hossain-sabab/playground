@@ -20,3 +20,17 @@
   border: 2px solid #000;
   margin: 40px 0;
 }
+
+.chessBoard {
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
+  background-color: #fff;
+  /* border: 5px solid #000; */
+}
+
+.blackOne {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
