@@ -205,64 +205,68 @@ h6 {
   top: 5px;
   left: 5px;
   border-radius: 80% 0% 0% 0%;
-
-  .redOne {
-    width: 200px;
-    height: 200px;
-    background-color: rgb(227, 221, 221);
-    position: absolute;
-    top: 56%;
-    left: 56%;
-    transform: translate(-50%, -50%);
-    border: 4px solid black;
-    border-radius: 20%;
-  }
-
-  .redCircleOne {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    top: 25%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 2px solid black;
-  }
-  .redCircleTwo {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    top: 25%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 2px solid black;
-  }
-  .redCircleThree {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    top: 70%;
-    left: 25%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 2px solid black;
-  }
-  .redCircleFour {
-    width: 50px;
-    height: 50px;
-    background-color: red;
-    position: absolute;
-    top: 70%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    border: 2px solid black;
-  }
 }
+
+.redOne {
+  width: 200px;
+  height: 200px;
+  background-color: rgb(227, 221, 221);
+  position: absolute;
+  top: 56%;
+  left: 56%;
+  transform: translate(-50%, -50%);
+  border: 4px solid black;
+  border-radius: 20%;
+}
+
+.redCircleOne {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.redCircleTwo {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.redCircleThree {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.redCircleFour {
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
 .blue {
   width: 300px;
   height: 300px;
@@ -281,9 +285,8 @@ h6 {
   top: 56%;
   left: 45%;
   transform: translate(-50%, -50%);
-  border: 4px solid black;
-  border-radius: 20%;
   border: 6px solid black;
+  border-radius: 20%;
 }
 
 .blueCircleOne {
@@ -297,6 +300,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .blueCircleTwo {
   width: 50px;
   height: 50px;
@@ -308,6 +312,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .blueCircleThree {
   width: 50px;
   height: 50px;
@@ -319,6 +324,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .blueCircleFour {
   width: 50px;
   height: 50px;
@@ -352,6 +358,7 @@ h6 {
   border: 4px solid black;
   border-radius: 20%;
 }
+
 .greenCircleOne {
   width: 50px;
   height: 50px;
@@ -363,6 +370,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .greenCircleTwo {
   width: 50px;
   height: 50px;
@@ -374,6 +382,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .greenCircleThree {
   width: 50px;
   height: 50px;
@@ -385,6 +394,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .greenCircleFour {
   width: 50px;
   height: 50px;
@@ -430,6 +440,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .yellowCircleTwo {
   width: 50px;
   height: 50px;
@@ -441,6 +452,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .yellowCircleThree {
   width: 50px;
   height: 50px;
@@ -452,6 +464,7 @@ h6 {
   border-radius: 50%;
   border: 2px solid black;
 }
+
 .yellowCircleFour {
   width: 50px;
   height: 50px;
@@ -474,9 +487,6 @@ h6 {
   background-image: url(../images/victory-in-pixels-stockcake.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-.middle {
   border: 2px solid black;
 }
 
@@ -490,13 +500,17 @@ h6 {
   background-color: rgb(227, 221, 221);
 }
 .miniBoxes {
+  /* column-gap: 18px; */
   display: flex;
-  justify-content: space-between;
-  padding: 1px 0px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2px;
+  row-gap: 2px;
 }
-.miniBoxes .one{
-  height: 50px;
-  width: 50px;
+
+.miniBoxes .one {
+  height: 48px;
+  width: 60px;
   background-color: rgb(255, 255, 255);
 }
 .topColum {
@@ -525,4 +539,61 @@ h6 {
   position: absolute;
   background-color: rgb(227, 221, 221);
 }
-/* Ludo part  */
+
+.miniBoxesTwo {
+  padding-left: 1;
+  column-gap: 1px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2px;
+  row-gap: 1px;
+  background-color: rgb(227, 221, 221);
+}
+.miniBoxesThree {
+  padding-left: 1;
+  column-gap: 1px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 2px;
+  row-gap: 1px;
+  background-color: rgb(227, 221, 221);
+}
+.miniBoxesTwo .two {
+  height: 61px;
+  width: 59px;
+  background-color: rgb(255, 255, 255);
+}
+.miniBoxesThree .two {
+  height: 61px;
+  width: 59px;
+  background-color: rgb(255, 255, 255);
+}
+/* Ludo part End */
+
+/* Shitol Pati Start */
+.bg {
+    padding: 300px;
+    background-color: #e8dcb8;
+    /* position: relative; */
+    display: flex;
+    border: 30px solid #9e1b4f;
+    /* box-sizing: border-box; */
+}
+.lineOne {
+    rotate: 45deg;
+    padding: 123px 3px;
+    background-color: #9e1b4f;
+    position: absolute;
+    transform: translate(-394px, -85px);
+}
+.lineTwo {
+    rotate: 45deg;
+    padding: 123px 3px;
+    background-color: #9e1b4f;
+    position: absolute;
+    transform: translate(-394px, -85px);
+}
+
+/* Shitol Pati End */
