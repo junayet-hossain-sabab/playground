@@ -3,9 +3,74 @@
 * {
   margin: 0;
   padding: 0;
+
+  ul li {
+    list-style-type: none;
+  }
 }
 
 /* ALL COMMON END */
+
+/* Header Part Start  */
+.headerPart {
+  padding: 10px 0px;
+  width: 100%;
+  background: rgb(91, 50, 20);
+}
+.container {
+  padding: 20px 0px;
+  width: 1140px;
+  margin: 0 auto;
+}
+.menu ul {
+  display: flex;
+  column-gap: 30px;
+  justify-content: center;
+}
+.menu ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 auto;
+  transition: 0.4s;
+  position: relative;
+}
+.menu ul li a:hover {
+  color: tomato;
+  width: 100%;
+  transition: 0.4s;
+}
+.menu ul li a::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  height: 2px;
+  background: #e8dcb8;
+  width: 0;
+  transition: all linear 0.4s;
+}
+
+.menu ul li a:hover::after {
+  width: 100%;
+}
+.menu ul li a::before {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  content: "";
+  height: 2px;
+  background: #e8dcb8;
+  width: 0;
+  transition: all linear 0.4s;
+}
+
+.menu ul li a:hover::before {
+  width: 100%;
+}
+/* Header Part End  */
 
 /* Chess Part */
 .chess {
@@ -574,26 +639,26 @@ h6 {
 
 /* Shitol Pati Start */
 .bg {
-    padding: 300px;
-    background-color: #e8dcb8;
-    /* position: relative; */
-    display: flex;
-    border: 30px solid #9e1b4f;
-    /* box-sizing: border-box; */
+  padding: 300px;
+  background-color: #e8dcb8;
+  /* position: relative; */
+  display: flex;
+  border: 30px solid #9e1b4f;
+  /* box-sizing: border-box; */
 }
 .lineOne {
-    rotate: 45deg;
-    padding: 123px 3px;
-    background-color: #9e1b4f;
-    position: absolute;
-    transform: translate(-394px, -85px);
+  rotate: 45deg;
+  padding: 123px 3px;
+  background-color: #9e1b4f;
+  position: absolute;
+  transform: translate(-394px, -85px);
 }
 .lineTwo {
-    rotate: 45deg;
-    padding: 123px 3px;
-    background-color: #9e1b4f;
-    position: absolute;
-    transform: translate(-394px, -85px);
+  rotate: 45deg;
+  padding: 123px 3px;
+  background-color: #9e1b4f;
+  position: absolute;
+  transform: translate(-394px, -85px);
 }
 
 /* Shitol Pati End */
